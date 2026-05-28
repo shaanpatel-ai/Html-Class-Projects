@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dom</title>
+    <style>
+        .alert {
+            color: lightcoral;
+            background-color: black;
+            padding: 2%;
+
+        }
+    </style>
+    </head>
+    <body>
+        <h1 id="demo">Welcome to Dom</h1>
+        <p>hello Shaan</p>
+        <h2 id="name">Shaan</h2>
+        <p>how are you doing</p>
+        <script>
+            let r=document.createElement('div');
+            r.className="alert";
+            r.innerHTML="<p> This is a paragraph </p>"
+            document.body.append(r)
+            document.getElementById("demo").innerHTML=" hello my name is Shaan"
+        </script>
+    </body>
+</html>
