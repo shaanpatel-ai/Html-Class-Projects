@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About coding</title>
+        <style>
+            body.dark{
+                color: white;
+                background-color: black;
+            }
+            button{
+                display: block;
+                margin: 5%;
+            }
+            .codding{
+                margin-top: 12px;
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>About codding</h1>
+       <p id="story"> Learn codding 😀</p>
+       <button onclick="goDark()">Click me to go dark mode</button>
+       <div class="codding">Write Codding to learn more <input type="text" id="name"></div>
+       
+       <button onclick="typeAndScream()">Now click me</button>
+       <button onclick="finishTheStory()">Did you like it</button>
+       <p> click the audio to be scared</p>
+       <audio id="audio" src="https://pixabay.com/sound-effects/people-jump-scare-scream-82738/" type="audio/mpeg"></audio>
+       <script>
+        function typeAndScream(){
+            document.getElementById("audio").play();
+            var person = document.getElementById("name").value;
+            alert("I told you not to do that" + person)
+        }
+            function goDark() {
+                document.body.className = "dark";
+            }
+                function finishTheStory() {
+                    document.getElementById("story").innerHTML = "I think it was good wad it"
+                }
+            
+        
+       </script>
+    </body>
+</html>
