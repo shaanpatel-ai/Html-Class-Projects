@@ -70,3 +70,25 @@ padding-left: 25px;
 .content li {
     margin-bottom: 10px;
 }
+.form{
+    display: flex;
+    flex-direction: column;
+}
+input,
+textarea{
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+button{
+    background: #0ea5e9;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background: #0285c7;
+}
